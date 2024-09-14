@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act1 FUNCIONES</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Act1 FUNCIONES</h1>
+    
+    <section id="triangle-area">
+        <h2>Calcular Área de un Triángulo</h2>
+        <label for="base">Base:</label>
+        <input type="number" id="base" required>
+        <label for="height">Altura:</label>
+        <input type="number" id="height" required>
+        <button onclick="calculateTriangleArea()">calcular</button>
+        <p id="triangle-result"></p>
+    </section>
+    
+    <section id="personal-data">
+        <h2>Datos personales</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" required>
+        <label for="address">Dirección:</label>
+        <input type="text" id="address" required>
+        <button onclick="printPersonalData()">Imprimir datos</button>
+        <div id="personal-data-result"></div>
+    </section>
+    
+    <section id="salary-calculation">
+        <h2>Calcular sueldo de trabajadores</h2>
+        <div id="trabajadores">
+        </div>
+        <button onclick="calculateTotalSalary()">Calcular nómina</button>
+        <p id="salary-result"></p>
+    </section>
+    
+    <section id="student-average">
+        <h2>Calcular promedio</h2>
+        <label for="subject1">Materia 1:</label>
+        <input type="number" id="subject1" required>
+        <label for="subject2">Materia 2:</label>
+        <input type="number" id="subject2" required>
+        <label for="subject3">Materia 3:</label>
+        <input type="number" id="subject3" required>
+        <button onclick="calculateStudentAverage()">Calcular promedio</button>
+        <p id="average-result"></p>
+    </section>
+    
+    <script src="js/funciones.js"></script>
+</body>
+</html>
